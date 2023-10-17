@@ -69,9 +69,9 @@ function App() {
   // Define a function to handle form data submission
   const handleFormSubmit = (data) => {
     // Add a route for the GET request to "/submit"
-
+    alert(data);
     // Send the form data to the server
-    fetch("/submit", {
+    fetch("http://localhost:3000/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

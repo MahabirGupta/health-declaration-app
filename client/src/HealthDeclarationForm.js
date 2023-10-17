@@ -168,7 +168,7 @@ function HealthDeclarationForm({ formData, setFormData, onFormSubmit }) {
           </label>
         </div>
         <div>
-          <label>
+          <label className="checkbox-label">
             <input
               type="checkbox"
               name="contactHistory"
