@@ -1,48 +1,4 @@
 // App.js
-// import React, { useState } from "react";
-// import React from "react";
-// import HealthDeclarationForm from "./HealthDeclarationForm";
-
-// function App() {
-//   // Define state for form data
-//   const [formData, setFormData] = React.useState({});
-
-//   // Update the formData object when an input field changes
-//   const handleFormSubmit = (data) => {
-//     // Send the form data to the server
-//     fetch("/submit", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(data),
-//     })
-//       .then((response) => response.json())
-//       .then((responseData) => {
-//         console.log("Response from server:", responseData);
-//       })
-//       .catch((error) => {
-//         console.error("Error:", error);
-//       });
-//   };
-
-//   return (
-//     // <div className="App">
-//     //   <HealthDeclarationForm />
-//     //   {/* <form onSubmit={onFormSubmit}>
-//     //     {/* Your form input fields */}
-//     //   {/* <button type="submit">Submit</button> */}
-//     //   {/* </form> */}
-//     // </div>
-//     <div className="App">
-//       <HealthDeclarationForm onFormSubmit={handleFormSubmit} />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// App.js
 import React, { useState } from "react";
 import HealthDeclarationForm from "./HealthDeclarationForm";
 
@@ -68,8 +24,6 @@ function App() {
 
   // Define a function to handle form data submission
   const handleFormSubmit = (data) => {
-    // Add a route for the GET request to "/submit"
-    alert(data);
     // Send the form data to the server
     fetch("http://localhost:3000/submit", {
       method: "POST",
